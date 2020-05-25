@@ -1,5 +1,5 @@
 <?php
-// эта модель уже была создана, я только дописал функцию city 
+// эта модель уже была создана, я только дописал функцию city
 
 namespace App;
 
@@ -28,14 +28,6 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
-
-    // public function country(){
-    //   return $this->hasOne('App\Country');
-    // }
-
-    // public function profile(){
-    //   return $this->hasOne('App\Profile');
-    // }
 
     public function city(){
       return $this->belongsTo('App\City');
